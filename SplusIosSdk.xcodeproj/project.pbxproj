@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2190938194EEFC000674F86 /* NSDictionary+QueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2190936194EEFC000674F86 /* NSDictionary+QueryBuilder.m */; };
+		E219093A194EEFD000674F86 /* NSDictionary+QueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E2190939194EEFD000674F86 /* NSDictionary+QueryBuilder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E219093D194EFE7900674F86 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E219093B194EFE7900674F86 /* Reachability.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E219093E194EFE7900674F86 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E219093C194EFE7900674F86 /* Reachability.m */; };
+		E21E1835194E823C0019C434 /* SplusCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09D8194AE55800ECFEBB /* SplusCallback.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E21E1848194E998A0019C434 /* HttpUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E1847194E986D0019C434 /* HttpUrl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E21E184E194E9D600019C434 /* checkWifi.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E184A194E9D600019C434 /* checkWifi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E21E184F194E9D600019C434 /* checkWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E184B194E9D600019C434 /* checkWifi.m */; };
+		E21E1850194E9D600019C434 /* qqMac.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E184C194E9D600019C434 /* qqMac.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E21E1851194E9D600019C434 /* qqMac.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E184D194E9D600019C434 /* qqMac.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E21E1855194EA3D80019C434 /* MyMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E21E1853194EA3D80019C434 /* MyMD5.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E21E1856194EA3D80019C434 /* MyMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E1854194EA3D80019C434 /* MyMD5.m */; };
+		E23F08D6194AC8AB00ECFEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F08D5194AC8AB00ECFEBB /* Foundation.framework */; };
+		E23F08DB194AC8AB00ECFEBB /* SplusIosSdk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E23F08DA194AC8AB00ECFEBB /* SplusIosSdk.h */; };
+		E23F08DD194AC8AB00ECFEBB /* SplusIosSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F08DC194AC8AB00ECFEBB /* SplusIosSdk.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F08E4194AC8AB00ECFEBB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F08E3194AC8AB00ECFEBB /* XCTest.framework */; };
+		E23F08E5194AC8AB00ECFEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F08D5194AC8AB00ECFEBB /* Foundation.framework */; };
+		E23F08E7194AC8AB00ECFEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F08E6194AC8AB00ECFEBB /* UIKit.framework */; };
+		E23F08EA194AC8AB00ECFEBB /* libSplusIosSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F08D2194AC8AB00ECFEBB /* libSplusIosSdk.a */; };
+		E23F08F0194AC8AB00ECFEBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E23F08EE194AC8AB00ECFEBB /* InfoPlist.strings */; };
+		E23F08F2194AC8AB00ECFEBB /* SplusIosSdkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F08F1194AC8AB00ECFEBB /* SplusIosSdkTests.m */; };
+		E23F0900194ACA5600ECFEBB /* Activate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F08FE194ACA5600ECFEBB /* Activate.m */; };
+		E23F0963194AD68800ECFEBB /* Activate.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F08FD194ACA5600ECFEBB /* Activate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F0969194AD7DC00ECFEBB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F0906194ACC5E00ECFEBB /* CoreFoundation.framework */; };
+		E23F096F194AD7DC00ECFEBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E23F096D194AD7DC00ECFEBB /* InfoPlist.strings */; };
+		E23F0976194AD8AD00ECFEBB /* splus_float_icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E23F0975194AD8AD00ECFEBB /* splus_float_icon_normal.png */; };
+		E23F099B194ADF6600ECFEBB /* Activate.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23F08FF194ACA5600ECFEBB /* Activate.xib */; };
+		E23F09B7194AE27700ECFEBB /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F099F194AE27600ECFEBB /* JSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09BA194AE27700ECFEBB /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09A2194AE27600ECFEBB /* NSObject+SBJSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09BB194AE27700ECFEBB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09A3194AE27600ECFEBB /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09BC194AE27700ECFEBB /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09A4194AE27600ECFEBB /* NSString+SBJSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09BD194AE27700ECFEBB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09A5194AE27600ECFEBB /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09BE194AE27700ECFEBB /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09A6194AE27600ECFEBB /* SBJsonBase.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09BF194AE27700ECFEBB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09A7194AE27600ECFEBB /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09C0194AE27700ECFEBB /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09A8194AE27600ECFEBB /* SBJsonParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09C1194AE27700ECFEBB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09A9194AE27600ECFEBB /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09C2194AE27700ECFEBB /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09AA194AE27600ECFEBB /* SBJsonStreamWriter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09C3194AE27700ECFEBB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09AB194AE27600ECFEBB /* SBJsonStreamWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09C4194AE27700ECFEBB /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09AC194AE27600ECFEBB /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09C5194AE27700ECFEBB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09AD194AE27600ECFEBB /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E23F09C6194AE27700ECFEBB /* SBProxyForJson.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09AE194AE27600ECFEBB /* SBProxyForJson.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09C7194AE27700ECFEBB /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09B0194AE27600ECFEBB /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09C8194AE27700ECFEBB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09B1194AE27600ECFEBB /* MBProgressHUD.m */; };
+		E23F09C9194AE27700ECFEBB /* httpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09B3194AE27600ECFEBB /* httpRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09CA194AE27700ECFEBB /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09B4194AE27600ECFEBB /* httpRequest.m */; };
+		E23F09D0194AE43F00ECFEBB /* SplusInterfaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09CE194AE43F00ECFEBB /* SplusInterfaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E23F09D1194AE43F00ECFEBB /* SplusInterfaceKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09CF194AE43F00ECFEBB /* SplusInterfaceKit.m */; };
+		E23F09DC194AFAF800ECFEBB /* AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E23F09DA194AFAF800ECFEBB /* AppInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E23F09DD194AFAF800ECFEBB /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E23F09DB194AFAF800ECFEBB /* AppInfo.m */; };
+		E24B118A194FEBA800D0399A /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = E24B1187194FEBA800D0399A /* Login.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E24B118B194FEBA800D0399A /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = E24B1188194FEBA800D0399A /* Login.m */; };
+		E24B118F194FEE4400D0399A /* splus_login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B118E194FEE4400D0399A /* splus_login_background.png */; };
+		E24B11A11950110400D0399A /* splus_login_bindphone_safe.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11911950110400D0399A /* splus_login_bindphone_safe.png */; };
+		E24B11A21950110400D0399A /* splus_login_bindphone_success.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11921950110400D0399A /* splus_login_bindphone_success.png */; };
+		E24B11A31950110400D0399A /* splus_login_remember_password.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11931950110400D0399A /* splus_login_remember_password.png */; };
+		E24B11A41950110400D0399A /* splus_login_title.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11941950110400D0399A /* splus_login_title.png */; };
+		E24B11A51950110400D0399A /* splus_person_account_modify_pwd_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11951950110400D0399A /* splus_person_account_modify_pwd_normal.png */; };
+		E24B11A61950110400D0399A /* splus_person_center_account_icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11961950110400D0399A /* splus_person_center_account_icon_normal.png */; };
+		E24B11A81950110400D0399A /* splus_recharge_card_explian_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11981950110400D0399A /* splus_recharge_card_explian_normal.png */; };
+		E24B11A91950110400D0399A /* splus_recharge_card_explian_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11991950110400D0399A /* splus_recharge_card_explian_press.png */; };
+		E24B11AB1950110400D0399A /* splus_recharge_result__fail_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B119B1950110400D0399A /* splus_recharge_result__fail_icon.png */; };
+		E24B11AC1950110400D0399A /* splus_register_clause_dialog_iv_title.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B119C1950110400D0399A /* splus_register_clause_dialog_iv_title.png */; };
+		E24B11AD1950110400D0399A /* splus_register_title.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B119D1950110400D0399A /* splus_register_title.png */; };
+		E24B11B919501B5A00D0399A /* splus_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B019501B5A00D0399A /* splus_back.png */; };
+		E24B11BA19501B5A00D0399A /* splus_checkbox_choose.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B119501B5A00D0399A /* splus_checkbox_choose.png */; };
+		E24B11BB19501B5A00D0399A /* splus_checkbox_unchoose.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B219501B5A00D0399A /* splus_checkbox_unchoose.png */; };
+		E24B11BC19501B5A00D0399A /* splus_close.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B319501B5A00D0399A /* splus_close.png */; };
+		E24B11BD19501B5A00D0399A /* splus_input_et.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B419501B5A00D0399A /* splus_input_et.png */; };
+		E24B11BE19501B5A00D0399A /* splus_login_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B519501B5A00D0399A /* splus_login_bt.png */; };
+		E24B11BF19501B5A00D0399A /* splus_register_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B619501B5A00D0399A /* splus_register_bt.png */; };
+		E24B11C019501B5A00D0399A /* splus_spilter_line.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B719501B5A00D0399A /* splus_spilter_line.png */; };
+		E24B11C119501B5A00D0399A /* splus_spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11B819501B5A00D0399A /* splus_spinner.png */; };
+		E24B11C91950276000D0399A /* QCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = E24B11C71950276000D0399A /* QCheckBox.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E24B11CA1950276000D0399A /* QCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E24B11C81950276000D0399A /* QCheckBox.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E24B11CF19502C6F00D0399A /* checkbox1_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11CB19502C6F00D0399A /* checkbox1_checked.png */; };
+		E24B11D019502C6F00D0399A /* checkbox1_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11CC19502C6F00D0399A /* checkbox1_checked@2x.png */; };
+		E24B11D119502C6F00D0399A /* checkbox1_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11CD19502C6F00D0399A /* checkbox1_unchecked.png */; };
+		E24B11D219502C6F00D0399A /* checkbox1_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11CE19502C6F00D0399A /* checkbox1_unchecked@2x.png */; };
+		E24B11D419502CC000D0399A /* splus_login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E24B11D319502CC000D0399A /* splus_login_bg.png */; };
+		E2587ACE19504C3D001ADBE8 /* NSData+ASE128.h in Headers */ = {isa = PBXBuildFile; fileRef = E2587ACC19504C3D001ADBE8 /* NSData+ASE128.h */; };
+		E2587ACF19504C3D001ADBE8 /* NSData+ASE128.m in Sources */ = {isa = PBXBuildFile; fileRef = E2587ACD19504C3D001ADBE8 /* NSData+ASE128.m */; };
+		E2587AD219504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2587AD019504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.h */; };
+		E2587AD319504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.m in Sources */ = {isa = PBXBuildFile; fileRef = E2587AD119504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.m */; };
+		E2587AD619504C88001ADBE8 /* NSString+dataFromHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = E2587AD419504C88001ADBE8 /* NSString+dataFromHexString.h */; };
+		E2587AD719504C88001ADBE8 /* NSString+dataFromHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2587AD519504C88001ADBE8 /* NSString+dataFromHexString.m */; };
+		E2CAD60419503F4700A5FD64 /* SplusImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CAD60219503F4700A5FD64 /* SplusImage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2CAD60519503F4700A5FD64 /* SplusImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CAD60319503F4700A5FD64 /* SplusImage.m */; };
+		E2CAD609195043F800A5FD64 /* UserData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CAD607195043F800A5FD64 /* UserData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2CAD60A195043F800A5FD64 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CAD608195043F800A5FD64 /* UserData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E23F08E8194AC8AB00ECFEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23F08CA194AC8AB00ECFEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23F08D1194AC8AB00ECFEBB;
+			remoteInfo = SplusIosSdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E23F08D0194AC8AB00ECFEBB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E23F08DB194AC8AB00ECFEBB /* SplusIosSdk.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E2190936194EEFC000674F86 /* NSDictionary+QueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryBuilder.m"; sourceTree = "<group>"; };
+		E2190939194EEFD000674F86 /* NSDictionary+QueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryBuilder.h"; sourceTree = "<group>"; };
+		E219093B194EFE7900674F86 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E219093C194EFE7900674F86 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E21E1847194E986D0019C434 /* HttpUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpUrl.h; sourceTree = "<group>"; };
+		E21E184A194E9D600019C434 /* checkWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkWifi.h; sourceTree = "<group>"; };
+		E21E184B194E9D600019C434 /* checkWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkWifi.m; sourceTree = "<group>"; };
+		E21E184C194E9D600019C434 /* qqMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qqMac.h; sourceTree = "<group>"; };
+		E21E184D194E9D600019C434 /* qqMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qqMac.m; sourceTree = "<group>"; };
+		E21E1853194EA3D80019C434 /* MyMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMD5.h; sourceTree = "<group>"; };
+		E21E1854194EA3D80019C434 /* MyMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMD5.m; sourceTree = "<group>"; };
+		E23F08D2194AC8AB00ECFEBB /* libSplusIosSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSplusIosSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23F08D5194AC8AB00ECFEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E23F08D9194AC8AB00ECFEBB /* SplusIosSdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplusIosSdk-Prefix.pch"; sourceTree = "<group>"; };
+		E23F08DA194AC8AB00ECFEBB /* SplusIosSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplusIosSdk.h; sourceTree = "<group>"; };
+		E23F08DC194AC8AB00ECFEBB /* SplusIosSdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplusIosSdk.m; sourceTree = "<group>"; };
+		E23F08E2194AC8AB00ECFEBB /* SplusIosSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplusIosSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23F08E3194AC8AB00ECFEBB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E23F08E6194AC8AB00ECFEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E23F08ED194AC8AB00ECFEBB /* SplusIosSdkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplusIosSdkTests-Info.plist"; sourceTree = "<group>"; };
+		E23F08EF194AC8AB00ECFEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E23F08F1194AC8AB00ECFEBB /* SplusIosSdkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplusIosSdkTests.m; sourceTree = "<group>"; };
+		E23F08FD194ACA5600ECFEBB /* Activate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activate.h; sourceTree = "<group>"; };
+		E23F08FE194ACA5600ECFEBB /* Activate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activate.m; sourceTree = "<group>"; };
+		E23F08FF194ACA5600ECFEBB /* Activate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Activate.xib; sourceTree = "<group>"; };
+		E23F0906194ACC5E00ECFEBB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E23F0968194AD7DC00ECFEBB /* SplusResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplusResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23F096C194AD7DC00ECFEBB /* SplusResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplusResources-Info.plist"; sourceTree = "<group>"; };
+		E23F096E194AD7DC00ECFEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E23F0970194AD7DC00ECFEBB /* SplusResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplusResources-Prefix.pch"; sourceTree = "<group>"; };
+		E23F0975194AD8AD00ECFEBB /* splus_float_icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_float_icon_normal.png; sourceTree = "<group>"; };
+		E23F099F194AE27600ECFEBB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		E23F09A2194AE27600ECFEBB /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		E23F09A3194AE27600ECFEBB /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		E23F09A4194AE27600ECFEBB /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		E23F09A5194AE27600ECFEBB /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		E23F09A6194AE27600ECFEBB /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		E23F09A7194AE27600ECFEBB /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		E23F09A8194AE27600ECFEBB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		E23F09A9194AE27600ECFEBB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		E23F09AA194AE27600ECFEBB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		E23F09AB194AE27600ECFEBB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		E23F09AC194AE27600ECFEBB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		E23F09AD194AE27600ECFEBB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E23F09AE194AE27600ECFEBB /* SBProxyForJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBProxyForJson.h; sourceTree = "<group>"; };
+		E23F09B0194AE27600ECFEBB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E23F09B1194AE27600ECFEBB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E23F09B3194AE27600ECFEBB /* httpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpRequest.h; sourceTree = "<group>"; };
+		E23F09B4194AE27600ECFEBB /* httpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = httpRequest.m; sourceTree = "<group>"; };
+		E23F09CE194AE43F00ECFEBB /* SplusInterfaceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplusInterfaceKit.h; sourceTree = "<group>"; };
+		E23F09CF194AE43F00ECFEBB /* SplusInterfaceKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplusInterfaceKit.m; sourceTree = "<group>"; };
+		E23F09D8194AE55800ECFEBB /* SplusCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplusCallback.h; sourceTree = "<group>"; };
+		E23F09DA194AFAF800ECFEBB /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		E23F09DB194AFAF800ECFEBB /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		E24B1187194FEBA800D0399A /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		E24B1188194FEBA800D0399A /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		E24B1189194FEBA800D0399A /* Login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		E24B118E194FEE4400D0399A /* splus_login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_background.png; sourceTree = "<group>"; };
+		E24B11911950110400D0399A /* splus_login_bindphone_safe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_bindphone_safe.png; sourceTree = "<group>"; };
+		E24B11921950110400D0399A /* splus_login_bindphone_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_bindphone_success.png; sourceTree = "<group>"; };
+		E24B11931950110400D0399A /* splus_login_remember_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_remember_password.png; sourceTree = "<group>"; };
+		E24B11941950110400D0399A /* splus_login_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_title.png; sourceTree = "<group>"; };
+		E24B11951950110400D0399A /* splus_person_account_modify_pwd_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_person_account_modify_pwd_normal.png; sourceTree = "<group>"; };
+		E24B11961950110400D0399A /* splus_person_center_account_icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_person_center_account_icon_normal.png; sourceTree = "<group>"; };
+		E24B11981950110400D0399A /* splus_recharge_card_explian_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_recharge_card_explian_normal.png; sourceTree = "<group>"; };
+		E24B11991950110400D0399A /* splus_recharge_card_explian_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_recharge_card_explian_press.png; sourceTree = "<group>"; };
+		E24B119B1950110400D0399A /* splus_recharge_result__fail_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_recharge_result__fail_icon.png; sourceTree = "<group>"; };
+		E24B119C1950110400D0399A /* splus_register_clause_dialog_iv_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_register_clause_dialog_iv_title.png; sourceTree = "<group>"; };
+		E24B119D1950110400D0399A /* splus_register_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_register_title.png; sourceTree = "<group>"; };
+		E24B11B019501B5A00D0399A /* splus_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_back.png; sourceTree = "<group>"; };
+		E24B11B119501B5A00D0399A /* splus_checkbox_choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_checkbox_choose.png; sourceTree = "<group>"; };
+		E24B11B219501B5A00D0399A /* splus_checkbox_unchoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_checkbox_unchoose.png; sourceTree = "<group>"; };
+		E24B11B319501B5A00D0399A /* splus_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_close.png; sourceTree = "<group>"; };
+		E24B11B419501B5A00D0399A /* splus_input_et.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_input_et.png; sourceTree = "<group>"; };
+		E24B11B519501B5A00D0399A /* splus_login_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_bt.png; sourceTree = "<group>"; };
+		E24B11B619501B5A00D0399A /* splus_register_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_register_bt.png; sourceTree = "<group>"; };
+		E24B11B719501B5A00D0399A /* splus_spilter_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_spilter_line.png; sourceTree = "<group>"; };
+		E24B11B819501B5A00D0399A /* splus_spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_spinner.png; sourceTree = "<group>"; };
+		E24B11C71950276000D0399A /* QCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCheckBox.h; sourceTree = "<group>"; };
+		E24B11C81950276000D0399A /* QCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCheckBox.m; sourceTree = "<group>"; };
+		E24B11CB19502C6F00D0399A /* checkbox1_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox1_checked.png; sourceTree = "<group>"; };
+		E24B11CC19502C6F00D0399A /* checkbox1_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox1_checked@2x.png"; sourceTree = "<group>"; };
+		E24B11CD19502C6F00D0399A /* checkbox1_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox1_unchecked.png; sourceTree = "<group>"; };
+		E24B11CE19502C6F00D0399A /* checkbox1_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox1_unchecked@2x.png"; sourceTree = "<group>"; };
+		E24B11D319502CC000D0399A /* splus_login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splus_login_bg.png; sourceTree = "<group>"; };
+		E2587ACC19504C3D001ADBE8 /* NSData+ASE128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ASE128.h"; sourceTree = "<group>"; };
+		E2587ACD19504C3D001ADBE8 /* NSData+ASE128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ASE128.m"; sourceTree = "<group>"; };
+		E2587AD019504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+hexRepresentationWithSpaces_AS.h"; sourceTree = "<group>"; };
+		E2587AD119504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+hexRepresentationWithSpaces_AS.m"; sourceTree = "<group>"; };
+		E2587AD419504C88001ADBE8 /* NSString+dataFromHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+dataFromHexString.h"; sourceTree = "<group>"; };
+		E2587AD519504C88001ADBE8 /* NSString+dataFromHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+dataFromHexString.m"; sourceTree = "<group>"; };
+		E2CAD60219503F4700A5FD64 /* SplusImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplusImage.h; sourceTree = "<group>"; };
+		E2CAD60319503F4700A5FD64 /* SplusImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplusImage.m; sourceTree = "<group>"; };
+		E2CAD607195043F800A5FD64 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		E2CAD608195043F800A5FD64 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E23F08CF194AC8AB00ECFEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F08D6194AC8AB00ECFEBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23F08DF194AC8AB00ECFEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F08E4194AC8AB00ECFEBB /* XCTest.framework in Frameworks */,
+				E23F08E7194AC8AB00ECFEBB /* UIKit.framework in Frameworks */,
+				E23F08EA194AC8AB00ECFEBB /* libSplusIosSdk.a in Frameworks */,
+				E23F08E5194AC8AB00ECFEBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23F0965194AD7DC00ECFEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F0969194AD7DC00ECFEBB /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E21E1842194E980E0019C434 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E21E1847194E986D0019C434 /* HttpUrl.h */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		E21E1849194E9D600019C434 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E219093B194EFE7900674F86 /* Reachability.h */,
+				E219093C194EFE7900674F86 /* Reachability.m */,
+				E21E184A194E9D600019C434 /* checkWifi.h */,
+				E21E184B194E9D600019C434 /* checkWifi.m */,
+				E21E184C194E9D600019C434 /* qqMac.h */,
+				E21E184D194E9D600019C434 /* qqMac.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		E21E1852194EA3D80019C434 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				E21E1853194EA3D80019C434 /* MyMD5.h */,
+				E21E1854194EA3D80019C434 /* MyMD5.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		E23F08C9194AC8AB00ECFEBB = {
+			isa = PBXGroup;
+			children = (
+				E23F08D7194AC8AB00ECFEBB /* SplusIosSdk */,
+				E23F08EB194AC8AB00ECFEBB /* SplusIosSdkTests */,
+				E23F096A194AD7DC00ECFEBB /* SplusResources */,
+				E23F08D4194AC8AB00ECFEBB /* Frameworks */,
+				E23F08D3194AC8AB00ECFEBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E23F08D3194AC8AB00ECFEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08D2194AC8AB00ECFEBB /* libSplusIosSdk.a */,
+				E23F08E2194AC8AB00ECFEBB /* SplusIosSdkTests.xctest */,
+				E23F0968194AD7DC00ECFEBB /* SplusResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E23F08D4194AC8AB00ECFEBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08D5194AC8AB00ECFEBB /* Foundation.framework */,
+				E23F08E3194AC8AB00ECFEBB /* XCTest.framework */,
+				E23F08E6194AC8AB00ECFEBB /* UIKit.framework */,
+				E23F0906194ACC5E00ECFEBB /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E23F08D7194AC8AB00ECFEBB /* SplusIosSdk */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08FB194AC8E000ECFEBB /* Classes */,
+				E23F08DA194AC8AB00ECFEBB /* SplusIosSdk.h */,
+				E23F08DC194AC8AB00ECFEBB /* SplusIosSdk.m */,
+				E23F08D8194AC8AB00ECFEBB /* Supporting Files */,
+			);
+			path = SplusIosSdk;
+			sourceTree = "<group>";
+		};
+		E23F08D8194AC8AB00ECFEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08D9194AC8AB00ECFEBB /* SplusIosSdk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E23F08EB194AC8AB00ECFEBB /* SplusIosSdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08F1194AC8AB00ECFEBB /* SplusIosSdkTests.m */,
+				E23F08EC194AC8AB00ECFEBB /* Supporting Files */,
+			);
+			path = SplusIosSdkTests;
+			sourceTree = "<group>";
+		};
+		E23F08EC194AC8AB00ECFEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08ED194AC8AB00ECFEBB /* SplusIosSdkTests-Info.plist */,
+				E23F08EE194AC8AB00ECFEBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E23F08FB194AC8E000ECFEBB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAD60B195044BE00A5FD64 /* SafeLib */,
+				E2CAD606195043C900A5FD64 /* UserInfo */,
+				E24B11C2195024B800D0399A /* SplusCheckBox */,
+				E24B1186194FEB7D00D0399A /* Login */,
+				E21E1852194EA3D80019C434 /* MD5 */,
+				E21E1849194E9D600019C434 /* DeviceInfo */,
+				E21E1842194E980E0019C434 /* Address */,
+				E23F09D9194AFAA300ECFEBB /* AppInfo */,
+				E23F09D7194AE54100ECFEBB /* Protocol */,
+				E23F09CD194AE41800ECFEBB /* CallInterface */,
+				E23F099E194AE27600ECFEBB /* JSon */,
+				E23F09AF194AE27600ECFEBB /* Loading */,
+				E23F09B2194AE27600ECFEBB /* Tool */,
+				E23F08FC194ACA2500ECFEBB /* Activate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E23F08FC194ACA2500ECFEBB /* Activate */ = {
+			isa = PBXGroup;
+			children = (
+				E23F08FD194ACA5600ECFEBB /* Activate.h */,
+				E23F08FE194ACA5600ECFEBB /* Activate.m */,
+				E23F08FF194ACA5600ECFEBB /* Activate.xib */,
+			);
+			path = Activate;
+			sourceTree = "<group>";
+		};
+		E23F096A194AD7DC00ECFEBB /* SplusResources */ = {
+			isa = PBXGroup;
+			children = (
+				E24B11D319502CC000D0399A /* splus_login_bg.png */,
+				E24B11CB19502C6F00D0399A /* checkbox1_checked.png */,
+				E24B11CC19502C6F00D0399A /* checkbox1_checked@2x.png */,
+				E24B11CD19502C6F00D0399A /* checkbox1_unchecked.png */,
+				E24B11CE19502C6F00D0399A /* checkbox1_unchecked@2x.png */,
+				E24B11B019501B5A00D0399A /* splus_back.png */,
+				E24B11B119501B5A00D0399A /* splus_checkbox_choose.png */,
+				E24B11B219501B5A00D0399A /* splus_checkbox_unchoose.png */,
+				E24B11B319501B5A00D0399A /* splus_close.png */,
+				E24B11B419501B5A00D0399A /* splus_input_et.png */,
+				E24B11B519501B5A00D0399A /* splus_login_bt.png */,
+				E24B11B619501B5A00D0399A /* splus_register_bt.png */,
+				E24B11B719501B5A00D0399A /* splus_spilter_line.png */,
+				E24B11B819501B5A00D0399A /* splus_spinner.png */,
+				E24B11911950110400D0399A /* splus_login_bindphone_safe.png */,
+				E24B11921950110400D0399A /* splus_login_bindphone_success.png */,
+				E24B11931950110400D0399A /* splus_login_remember_password.png */,
+				E24B11941950110400D0399A /* splus_login_title.png */,
+				E24B11951950110400D0399A /* splus_person_account_modify_pwd_normal.png */,
+				E24B11961950110400D0399A /* splus_person_center_account_icon_normal.png */,
+				E24B11981950110400D0399A /* splus_recharge_card_explian_normal.png */,
+				E24B11991950110400D0399A /* splus_recharge_card_explian_press.png */,
+				E24B119B1950110400D0399A /* splus_recharge_result__fail_icon.png */,
+				E24B119C1950110400D0399A /* splus_register_clause_dialog_iv_title.png */,
+				E24B119D1950110400D0399A /* splus_register_title.png */,
+				E24B118E194FEE4400D0399A /* splus_login_background.png */,
+				E23F0975194AD8AD00ECFEBB /* splus_float_icon_normal.png */,
+				E23F096B194AD7DC00ECFEBB /* Supporting Files */,
+			);
+			path = SplusResources;
+			sourceTree = "<group>";
+		};
+		E23F096B194AD7DC00ECFEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E23F096C194AD7DC00ECFEBB /* SplusResources-Info.plist */,
+				E23F096D194AD7DC00ECFEBB /* InfoPlist.strings */,
+				E23F0970194AD7DC00ECFEBB /* SplusResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E23F099E194AE27600ECFEBB /* JSon */ = {
+			isa = PBXGroup;
+			children = (
+				E23F099F194AE27600ECFEBB /* JSON.h */,
+				E23F09A2194AE27600ECFEBB /* NSObject+SBJSON.h */,
+				E23F09A3194AE27600ECFEBB /* NSObject+SBJSON.m */,
+				E23F09A4194AE27600ECFEBB /* NSString+SBJSON.h */,
+				E23F09A5194AE27600ECFEBB /* NSString+SBJSON.m */,
+				E23F09A6194AE27600ECFEBB /* SBJsonBase.h */,
+				E23F09A7194AE27600ECFEBB /* SBJsonBase.m */,
+				E23F09A8194AE27600ECFEBB /* SBJsonParser.h */,
+				E23F09A9194AE27600ECFEBB /* SBJsonParser.m */,
+				E23F09AA194AE27600ECFEBB /* SBJsonStreamWriter.h */,
+				E23F09AB194AE27600ECFEBB /* SBJsonStreamWriter.m */,
+				E23F09AC194AE27600ECFEBB /* SBJsonWriter.h */,
+				E23F09AD194AE27600ECFEBB /* SBJsonWriter.m */,
+				E23F09AE194AE27600ECFEBB /* SBProxyForJson.h */,
+			);
+			path = JSon;
+			sourceTree = "<group>";
+		};
+		E23F09AF194AE27600ECFEBB /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				E23F09B0194AE27600ECFEBB /* MBProgressHUD.h */,
+				E23F09B1194AE27600ECFEBB /* MBProgressHUD.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		E23F09B2194AE27600ECFEBB /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E2190939194EEFD000674F86 /* NSDictionary+QueryBuilder.h */,
+				E2190936194EEFC000674F86 /* NSDictionary+QueryBuilder.m */,
+				E23F09B3194AE27600ECFEBB /* httpRequest.h */,
+				E23F09B4194AE27600ECFEBB /* httpRequest.m */,
+				E2CAD60219503F4700A5FD64 /* SplusImage.h */,
+				E2CAD60319503F4700A5FD64 /* SplusImage.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E23F09CD194AE41800ECFEBB /* CallInterface */ = {
+			isa = PBXGroup;
+			children = (
+				E23F09CE194AE43F00ECFEBB /* SplusInterfaceKit.h */,
+				E23F09CF194AE43F00ECFEBB /* SplusInterfaceKit.m */,
+			);
+			path = CallInterface;
+			sourceTree = "<group>";
+		};
+		E23F09D7194AE54100ECFEBB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E23F09D8194AE55800ECFEBB /* SplusCallback.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E23F09D9194AFAA300ECFEBB /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E23F09DA194AFAF800ECFEBB /* AppInfo.h */,
+				E23F09DB194AFAF800ECFEBB /* AppInfo.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		E24B1186194FEB7D00D0399A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E24B1187194FEBA800D0399A /* Login.h */,
+				E24B1188194FEBA800D0399A /* Login.m */,
+				E24B1189194FEBA800D0399A /* Login.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E24B11C2195024B800D0399A /* SplusCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				E24B11C71950276000D0399A /* QCheckBox.h */,
+				E24B11C81950276000D0399A /* QCheckBox.m */,
+			);
+			path = SplusCheckBox;
+			sourceTree = "<group>";
+		};
+		E2CAD606195043C900A5FD64 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAD607195043F800A5FD64 /* UserData.h */,
+				E2CAD608195043F800A5FD64 /* UserData.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		E2CAD60B195044BE00A5FD64 /* SafeLib */ = {
+			isa = PBXGroup;
+			children = (
+				E2587AD419504C88001ADBE8 /* NSString+dataFromHexString.h */,
+				E2587AD519504C88001ADBE8 /* NSString+dataFromHexString.m */,
+				E2587AD019504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.h */,
+				E2587AD119504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.m */,
+				E2587ACC19504C3D001ADBE8 /* NSData+ASE128.h */,
+				E2587ACD19504C3D001ADBE8 /* NSData+ASE128.m */,
+			);
+			path = SafeLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E23F0915194ACF4D00ECFEBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F09D0194AE43F00ECFEBB /* SplusInterfaceKit.h in Headers */,
+				E23F09DC194AFAF800ECFEBB /* AppInfo.h in Headers */,
+				E23F0963194AD68800ECFEBB /* Activate.h in Headers */,
+				E23F09BE194AE27700ECFEBB /* SBJsonBase.h in Headers */,
+				E23F09BC194AE27700ECFEBB /* NSString+SBJSON.h in Headers */,
+				E23F09C6194AE27700ECFEBB /* SBProxyForJson.h in Headers */,
+				E23F09C2194AE27700ECFEBB /* SBJsonStreamWriter.h in Headers */,
+				E23F09C7194AE27700ECFEBB /* MBProgressHUD.h in Headers */,
+				E23F09B7194AE27700ECFEBB /* JSON.h in Headers */,
+				E23F09C0194AE27700ECFEBB /* SBJsonParser.h in Headers */,
+				E23F09BA194AE27700ECFEBB /* NSObject+SBJSON.h in Headers */,
+				E2CAD60419503F4700A5FD64 /* SplusImage.h in Headers */,
+				E2CAD609195043F800A5FD64 /* UserData.h in Headers */,
+				E21E184E194E9D600019C434 /* checkWifi.h in Headers */,
+				E21E1850194E9D600019C434 /* qqMac.h in Headers */,
+				E21E1855194EA3D80019C434 /* MyMD5.h in Headers */,
+				E219093A194EEFD000674F86 /* NSDictionary+QueryBuilder.h in Headers */,
+				E2587AD219504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.h in Headers */,
+				E24B118A194FEBA800D0399A /* Login.h in Headers */,
+				E24B11C91950276000D0399A /* QCheckBox.h in Headers */,
+				E21E1835194E823C0019C434 /* SplusCallback.h in Headers */,
+				E21E1848194E998A0019C434 /* HttpUrl.h in Headers */,
+				E219093D194EFE7900674F86 /* Reachability.h in Headers */,
+				E23F09C9194AE27700ECFEBB /* httpRequest.h in Headers */,
+				E2587ACE19504C3D001ADBE8 /* NSData+ASE128.h in Headers */,
+				E23F09C4194AE27700ECFEBB /* SBJsonWriter.h in Headers */,
+				E2587AD619504C88001ADBE8 /* NSString+dataFromHexString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E23F08D1194AC8AB00ECFEBB /* SplusIosSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23F08F5194AC8AB00ECFEBB /* Build configuration list for PBXNativeTarget "SplusIosSdk" */;
+			buildPhases = (
+				E23F08CE194AC8AB00ECFEBB /* Sources */,
+				E23F08CF194AC8AB00ECFEBB /* Frameworks */,
+				E23F08D0194AC8AB00ECFEBB /* CopyFiles */,
+				E23F0915194ACF4D00ECFEBB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplusIosSdk;
+			productName = SplusIosSdk;
+			productReference = E23F08D2194AC8AB00ECFEBB /* libSplusIosSdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E23F08E1194AC8AB00ECFEBB /* SplusIosSdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23F08F8194AC8AB00ECFEBB /* Build configuration list for PBXNativeTarget "SplusIosSdkTests" */;
+			buildPhases = (
+				E23F08DE194AC8AB00ECFEBB /* Sources */,
+				E23F08DF194AC8AB00ECFEBB /* Frameworks */,
+				E23F08E0194AC8AB00ECFEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23F08E9194AC8AB00ECFEBB /* PBXTargetDependency */,
+			);
+			name = SplusIosSdkTests;
+			productName = SplusIosSdkTests;
+			productReference = E23F08E2194AC8AB00ECFEBB /* SplusIosSdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E23F0967194AD7DC00ECFEBB /* SplusResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23F0971194AD7DC00ECFEBB /* Build configuration list for PBXNativeTarget "SplusResources" */;
+			buildPhases = (
+				E23F0964194AD7DC00ECFEBB /* Sources */,
+				E23F0965194AD7DC00ECFEBB /* Frameworks */,
+				E23F0966194AD7DC00ECFEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplusResources;
+			productName = SplusResources;
+			productReference = E23F0968194AD7DC00ECFEBB /* SplusResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E23F08CA194AC8AB00ECFEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = akzhang;
+			};
+			buildConfigurationList = E23F08CD194AC8AB00ECFEBB /* Build configuration list for PBXProject "SplusIosSdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E23F08C9194AC8AB00ECFEBB;
+			productRefGroup = E23F08D3194AC8AB00ECFEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E23F08D1194AC8AB00ECFEBB /* SplusIosSdk */,
+				E23F08E1194AC8AB00ECFEBB /* SplusIosSdkTests */,
+				E23F0967194AD7DC00ECFEBB /* SplusResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E23F08E0194AC8AB00ECFEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F08F0194AC8AB00ECFEBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23F0966194AD7DC00ECFEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24B11B919501B5A00D0399A /* splus_back.png in Resources */,
+				E24B11A61950110400D0399A /* splus_person_center_account_icon_normal.png in Resources */,
+				E24B11BA19501B5A00D0399A /* splus_checkbox_choose.png in Resources */,
+				E23F099B194ADF6600ECFEBB /* Activate.xib in Resources */,
+				E24B11A31950110400D0399A /* splus_login_remember_password.png in Resources */,
+				E23F0976194AD8AD00ECFEBB /* splus_float_icon_normal.png in Resources */,
+				E24B11A51950110400D0399A /* splus_person_account_modify_pwd_normal.png in Resources */,
+				E24B11A81950110400D0399A /* splus_recharge_card_explian_normal.png in Resources */,
+				E24B11D219502C6F00D0399A /* checkbox1_unchecked@2x.png in Resources */,
+				E24B11A91950110400D0399A /* splus_recharge_card_explian_press.png in Resources */,
+				E24B11C019501B5A00D0399A /* splus_spilter_line.png in Resources */,
+				E24B11BD19501B5A00D0399A /* splus_input_et.png in Resources */,
+				E24B11BC19501B5A00D0399A /* splus_close.png in Resources */,
+				E24B11A41950110400D0399A /* splus_login_title.png in Resources */,
+				E23F096F194AD7DC00ECFEBB /* InfoPlist.strings in Resources */,
+				E24B11A21950110400D0399A /* splus_login_bindphone_success.png in Resources */,
+				E24B11D119502C6F00D0399A /* checkbox1_unchecked.png in Resources */,
+				E24B11BF19501B5A00D0399A /* splus_register_bt.png in Resources */,
+				E24B11BB19501B5A00D0399A /* splus_checkbox_unchoose.png in Resources */,
+				E24B11C119501B5A00D0399A /* splus_spinner.png in Resources */,
+				E24B11BE19501B5A00D0399A /* splus_login_bt.png in Resources */,
+				E24B11D019502C6F00D0399A /* checkbox1_checked@2x.png in Resources */,
+				E24B11AD1950110400D0399A /* splus_register_title.png in Resources */,
+				E24B11A11950110400D0399A /* splus_login_bindphone_safe.png in Resources */,
+				E24B11AC1950110400D0399A /* splus_register_clause_dialog_iv_title.png in Resources */,
+				E24B11AB1950110400D0399A /* splus_recharge_result__fail_icon.png in Resources */,
+				E24B11CF19502C6F00D0399A /* checkbox1_checked.png in Resources */,
+				E24B118F194FEE4400D0399A /* splus_login_background.png in Resources */,
+				E24B11D419502CC000D0399A /* splus_login_bg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E23F08CE194AC8AB00ECFEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F09CA194AE27700ECFEBB /* httpRequest.m in Sources */,
+				E2587AD319504C68001ADBE8 /* NSData+hexRepresentationWithSpaces_AS.m in Sources */,
+				E23F09C1194AE27700ECFEBB /* SBJsonParser.m in Sources */,
+				E21E184F194E9D600019C434 /* checkWifi.m in Sources */,
+				E24B118B194FEBA800D0399A /* Login.m in Sources */,
+				E23F09BD194AE27700ECFEBB /* NSString+SBJSON.m in Sources */,
+				E23F09BF194AE27700ECFEBB /* SBJsonBase.m in Sources */,
+				E2190938194EEFC000674F86 /* NSDictionary+QueryBuilder.m in Sources */,
+				E23F09C5194AE27700ECFEBB /* SBJsonWriter.m in Sources */,
+				E23F09DD194AFAF800ECFEBB /* AppInfo.m in Sources */,
+				E23F09D1194AE43F00ECFEBB /* SplusInterfaceKit.m in Sources */,
+				E23F0900194ACA5600ECFEBB /* Activate.m in Sources */,
+				E2587AD719504C88001ADBE8 /* NSString+dataFromHexString.m in Sources */,
+				E23F09BB194AE27700ECFEBB /* NSObject+SBJSON.m in Sources */,
+				E23F09C8194AE27700ECFEBB /* MBProgressHUD.m in Sources */,
+				E2CAD60519503F4700A5FD64 /* SplusImage.m in Sources */,
+				E24B11CA1950276000D0399A /* QCheckBox.m in Sources */,
+				E21E1851194E9D600019C434 /* qqMac.m in Sources */,
+				E2CAD60A195043F800A5FD64 /* UserData.m in Sources */,
+				E23F08DD194AC8AB00ECFEBB /* SplusIosSdk.m in Sources */,
+				E21E1856194EA3D80019C434 /* MyMD5.m in Sources */,
+				E23F09C3194AE27700ECFEBB /* SBJsonStreamWriter.m in Sources */,
+				E2587ACF19504C3D001ADBE8 /* NSData+ASE128.m in Sources */,
+				E219093E194EFE7900674F86 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23F08DE194AC8AB00ECFEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23F08F2194AC8AB00ECFEBB /* SplusIosSdkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23F0964194AD7DC00ECFEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E23F08E9194AC8AB00ECFEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23F08D1194AC8AB00ECFEBB /* SplusIosSdk */;
+			targetProxy = E23F08E8194AC8AB00ECFEBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E23F08EE194AC8AB00ECFEBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23F08EF194AC8AB00ECFEBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E23F096D194AD7DC00ECFEBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23F096E194AD7DC00ECFEBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E23F08F3194AC8AB00ECFEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E23F08F4194AC8AB00ECFEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E23F08F6194AC8AB00ECFEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SplusIosSdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusIosSdk/SplusIosSdk-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E23F08F7194AC8AB00ECFEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SplusIosSdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusIosSdk/SplusIosSdk-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E23F08F9194AC8AB00ECFEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusIosSdk/SplusIosSdk-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SplusIosSdkTests/SplusIosSdkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E23F08FA194AC8AB00ECFEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusIosSdk/SplusIosSdk-Prefix.pch";
+				INFOPLIST_FILE = "SplusIosSdkTests/SplusIosSdkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		E23F0972194AD7DC00ECFEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusResources/SplusResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SplusResources/SplusResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E23F0973194AD7DC00ECFEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplusResources/SplusResources-Prefix.pch";
+				INFOPLIST_FILE = "SplusResources/SplusResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E23F08CD194AC8AB00ECFEBB /* Build configuration list for PBXProject "SplusIosSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23F08F3194AC8AB00ECFEBB /* Debug */,
+				E23F08F4194AC8AB00ECFEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23F08F5194AC8AB00ECFEBB /* Build configuration list for PBXNativeTarget "SplusIosSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23F08F6194AC8AB00ECFEBB /* Debug */,
+				E23F08F7194AC8AB00ECFEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23F08F8194AC8AB00ECFEBB /* Build configuration list for PBXNativeTarget "SplusIosSdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23F08F9194AC8AB00ECFEBB /* Debug */,
+				E23F08FA194AC8AB00ECFEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23F0971194AD7DC00ECFEBB /* Build configuration list for PBXNativeTarget "SplusResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23F0972194AD7DC00ECFEBB /* Debug */,
+				E23F0973194AD7DC00ECFEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E23F08CA194AC8AB00ECFEBB /* Project object */;
+}
